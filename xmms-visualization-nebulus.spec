@@ -3,7 +3,7 @@ Summary:	Nebulus visualization plugin
 Summary(pl):	Wtyczka wizualizacji Nebulus
 Name:		xmms-visualization-nebulus
 Version:	0.5.0
-Release:	0.1
+Release:	0.2
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://nebulus.tuxfamily.org/%{_realname}-%{version}.tar.bz2
@@ -14,12 +14,13 @@ BuildRequires:	SDL-devel >= 1.2.5
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
 BuildRequires:	xmms-devel >= 1.2.7
 Requires:	OpenGL
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _noautoreqdep		libGL.so.1 libGLU.so.1
-%define         _xmms_plugin_dir	%(xmms-config --visualization-plugin-dir)
 
 %description
 Nebulus is an OpenGL visual plugin for XMMS. 
@@ -42,7 +43,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README AUTHORS
-%attr(755,root,root) %{_xmms_plugin_dir}/*
+%attr(755,root,root) %{xmms_visualization_plugindir}/*
