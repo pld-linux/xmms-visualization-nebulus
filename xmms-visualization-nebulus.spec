@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         _noautoreqdep		libGL.so.1 libGLU.so.1
 
 %description
-Nebulus is an OpenGL visual plugin for XMMS. 
+Nebulus is an OpenGL visual plugin for XMMS.
 
 %description -l pl
 Nebulus jest wtyczk± wizualizacji dla XMMS opart± o OpenGL.
