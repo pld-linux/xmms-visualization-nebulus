@@ -20,7 +20,7 @@ Requires:	OpenGL
 Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _noautoreqdep		libGL.so.1 libGLU.so.1
+%define		_noautoreqdep	libGL.so.1 libGLU.so.1
 
 %description
 Nebulus is an OpenGL visual plugin for XMMS.
