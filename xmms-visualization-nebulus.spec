@@ -8,7 +8,7 @@ License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://nebulus.tuxfamily.org/%{_realname}-%{version}.tar.bz2
 # Source0-md5:	cd88bdd3e0813698a8acbdf6891d51cc
-URL:		http://nebulus.tuxfamily.org
+URL:		http://nebulus.tuxfamily.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.5
 BuildRequires:	autoconf
