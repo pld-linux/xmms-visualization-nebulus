@@ -1,6 +1,6 @@
 %define		_realname xmms-nebulus
 Summary:	Nebulus visualization plugin
-Summary(pl):	Wtyczka wizualizacji Nebulus dla XMMS-a
+Summary(pl.UTF-8):   Wtyczka wizualizacji Nebulus dla XMMS-a
 Name:		xmms-visualization-nebulus
 Version:	0.7.0
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Nebulus is an OpenGL visual plugin for XMMS.
 
-%description -l pl
-Nebulus jest wtyczk± wizualizacji dla XMMS-a opart± o OpenGL.
+%description -l pl.UTF-8
+Nebulus jest wtyczkÄ… wizualizacji dla XMMS-a opartÄ… o OpenGL.
 
 %prep
 %setup -q -n %{_realname}-%{version}
