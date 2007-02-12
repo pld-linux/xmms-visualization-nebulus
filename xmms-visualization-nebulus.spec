@@ -1,6 +1,6 @@
 %define		_realname xmms-nebulus
 Summary:	Nebulus visualization plugin
-Summary(pl.UTF-8):   Wtyczka wizualizacji Nebulus dla XMMS-a
+Summary(pl.UTF-8):	Wtyczka wizualizacji Nebulus dla XMMS-a
 Name:		xmms-visualization-nebulus
 Version:	0.7.0
 Release:	1
