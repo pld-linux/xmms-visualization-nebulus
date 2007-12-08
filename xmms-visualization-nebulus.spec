@@ -2,12 +2,12 @@
 Summary:	Nebulus visualization plugin
 Summary(pl.UTF-8):	Wtyczka wizualizacji Nebulus dla XMMS-a
 Name:		xmms-visualization-nebulus
-Version:	0.7.0
+Version:	0.8.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://nebulus.tuxfamily.org/%{_realname}-%{version}.tar.bz2
-# Source0-md5:	16d1b6bf109a64f231f84aea5c7b0975
+# Source0-md5:	07c15281a5e2e242a79536c07982cf5a
 URL:		http://nebulus.tuxfamily.org/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel >= 1.2.5
